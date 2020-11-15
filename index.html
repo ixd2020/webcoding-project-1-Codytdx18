@@ -5,108 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
+    <title>testing website</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <! -- import the font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Hi there!</h1>
-    <h2>About</h2>
-    <p>
-      <a href="/about.html">Go to About</a> /
-      <a href="#lunchtime">Go to lunchtime</a>
-    </p>
+  <body class="open">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="index.html" class="logo"
+            ><img
+              src="https://cdn.glitch.com/745ae5d5-8886-448e-9ada-97e0c0814da2%2Fjessica-zoob-logo.png?v=1605435714146"
+          /></a>
+          <ui class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Works</a>
+            </li>
+          </ui>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline"><span class="first-letter">W</span>elcome</h2>
+        <h1 class="headline">Jessica Zoob</h1>
+        <div class="headline-description">
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <div class="line line-right"></div>
+          </div>
+          <div class="single-animation">
+            <h5>Click to proceed</h5>
+            <a href="#" class="btn cta-btn"></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2 id="lunchtime"></h2>
-    I'm your cool new webpage. Made with
-    <a href="/about.html">Go to About</a>
-    It went through such rapid contortions that the little bear was forced to
-    change his hold on it so many times he became confused in the darkness, and
-    could not, for the life of him, tell whether he held the sheep right side
-    up, or upside down. But that point was decided for him a moment later by the
-    animal itself, who, with a sudden twist, jabbed its horns so hard into his
-    lowest ribs that he gave a grunt of anger and disgust. She patiently waited
-    for his number to be called. She had no desire to be there, but her mom had
-    insisted that she go. She's resisted at first, but over time she realized it
-    was simply easier to appease her and go. Mom tended to be that way. She
-    would keep insisting until you wore down and did what she wanted. So, here
-    she sat, patiently waiting for her number to be called. She reached her
-    goal, exhausted. Even more chilling to her was that the euphoria that she
-    thought she'd feel upon reaching it wasn't there. Something wasn't right.
-    Was this the only feeling she'd have for over five years of hard work?
-    Sometimes it's simply better to ignore the haters. That's the lesson that
-    Tom's dad had been trying to teach him, but Tom still couldn't let it go. He
-    latched onto them and their hate and couldn't let it go, but he also
-    realized that this wasn't healthy. That's when he came up with his devious
-    plan. He walked down the steps from the train station in a bit of a hurry
-    knowing the secrets in the briefcase must be secured as quickly as possible.
-    Bounding down the steps, he heard something behind him and quickly turned in
-    a panic. There was nobody there but a pair of old worn-out shoes were placed
-    neatly on the steps he had just come down. Had he past them without seeing
-    them? It didn't seem possible. He was about to turn and be on his way when a
-    deep chill filled his body.
-    <p></p>
-    <h2>Cell that spans two columns</h2>
-    <p>To make a cell span more than one column, use the colspan attribute.</p>
-
-    <table style="width:100%">
-      <tr>
-        <th>Name</th>
-        <th colspan="2">Telephone</th>
-        <th colspan="1">Favourite Music</th>
-        <th colspan="3">Favourite FOOD</th>
-        <th colspan="1">Favourite Sport</th>
-      </tr>
-      <tr>
-        <td>Bill Gates</td>
-        <td>55577854</td>
-        <td>55577855</td>
-        <td>Pop</td>
-        <td>Banana</td>
-        <td>Orange</td>
-        <h2>Cell that spans two columns</h2>
-        <p>
-          To make a cell span more than one column, use the colspan attribute.
-        </p>
-
-        <table style="width:75%">
-          <tr>
-            <th>Name</th>
-            <th colspan="2">Telephone</th>
-            <th colspan="1">Favourite Music</th>
-            <th colspan="3">Favourite FOOD</th>
-            <th colspan="1">Favourite Sport</th>
-          </tr>
-          <tr>
-            <td>Bill Gates</td>
-            <td>55577854</td>
-            <td>55577855</td>
-            <td>Pop</td>
-            <td>Banana</td>
-            <td>LMAO</td>
-            <ul>
-              <li>Coffee</li>
-              <li>Pearls</li>
-              <li>Milk</li>
-            </ul>
-
-            <ol start="99">
-              <li><b>Coffee</b></li>
-              <li><i>tea</i></li>
-              <li>Milk</li>
-              <li>I nit myself some bubble milk tea</li>
-            </ol>
-          </tr>
-        </table>
-      </tr>
-    </table>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
   </body>
