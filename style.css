@@ -378,7 +378,7 @@ footer {
   border-radius: 50%;
 }
 
-.back-to-top {
+.back-to-top i{
   display: block;
   color: #fff;
   font-size: 2rem;
@@ -386,15 +386,15 @@ footer {
 }
 
 .footer-content{
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .footer-content h4{
   font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 3px;
-  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 
 .footer-content .asterisk{
@@ -416,7 +416,7 @@ footer {
   justify-content: center;
 }
 
-.social-icons 1{
+.social-icons i{
   font-size: 2rem;
   color: #fff;
   padding: .8rem 2rem;
