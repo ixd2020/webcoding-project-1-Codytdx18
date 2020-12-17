@@ -48,16 +48,17 @@ section {
   background: #FFEF5B;
   display: inline-block;
   color: #111;
-  margin-top: 15px;
-  padding: 20px 36px;
+  margin-top: 10px;
+  padding: 14px 28px;
+  border-radius: 32px solid;
   font-size: 14px;
   text-transform: none;
   text-decoration: none;
   font-weight: 1000;
   font-style: bold;
   transition-duration: 0.5s;
-  text-transform: uppercase;
   cursor: pointer;
+  list-font-style: none;
 }
 
 .btn:hover {
@@ -80,17 +81,19 @@ header {
 
 header.sticky {
   background: #fff;
-  padding: 20px 100px;
+  padding: 20px 72px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
+  text-align: left;
+  margin: 0 30px;
 }
 
 header.sticky .logo {
@@ -107,9 +110,8 @@ header ul li {
 header ul li a {
   position: relative;
   display: inline-block;
-  margin: 0 24px;
+  margin: 0 18px;
   color: #fff;
-  font-style: bold;
   text-decoration: none;
   font-size: 20px;
   transition-duration: 0.5s;
@@ -181,12 +183,12 @@ header.sticky ul li a {
 }
 
 .contenthd {
-  padding-right: 20px;
+  padding-right: 22px;
 }
 
 .contenthd h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .responsive {
@@ -216,6 +218,46 @@ header.sticky ul li a {
   margin: 20px;
   text-align: center;
   transition: 0.5s;
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.services .content .servicesHd-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.services.content .servicesHd : hover .services .content .servicesHd-inner {
+  transform: rotateX(180deg);
+}
+
+.services .content .servicesHd-front,
+.services .content .servicesHd-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+..services .content .servicesHd-front {
+  background-color: #bbb;
+  color: black;
+}
+
+..services .content .servicesHd-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+li {
+  list-style: none;
 }
 
 .services .content .servicesHd:hover {
@@ -232,6 +274,8 @@ header.sticky ul li a {
   font-weight: 600;
 }
 
+/*art works*/
+
 .work .content {
   display: flex;
   justify-content: space-between;
@@ -246,6 +290,8 @@ header.sticky ul li a {
 .work .content .workHd img {
   max-width: 100%;
 }
+
+/*testimonials~*/
 
 .testimonial {
   background: #f7f7f7;
@@ -293,6 +339,8 @@ header.sticky ul li a {
   font-size: 14px;
   font-weight: 400;
 }
+
+/*footer page*/
 
 .contact {
   background: #111;
@@ -465,7 +513,7 @@ header.sticky ul li a {
   .btn {
     margin-top: 8px;
     padding: 8px 16px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .heading h2 {
@@ -527,7 +575,7 @@ body {
   background-size: cover;
   background-position: left;
 }
-  
+
 .sign-up-form {
   width: 300px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
@@ -581,4 +629,76 @@ hr {
   background: #fff;
   width: 25px;
   margin: -19px auto 10px;
+}
+
+/*image gallery*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn1 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #ddd;
+}
+
+.btn1.active {
+  background-color: #666;
+  color: white;
 }
